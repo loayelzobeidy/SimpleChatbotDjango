@@ -10,8 +10,12 @@ class User(models.Model):
     employed = models.BooleanField()
     job_title = models.CharField(max_length=200)
     years_of_experience = models.IntegerField()
-    seeking_titles = models.ManyToManyField("Title")    
+    seeking_titles = models.ManyToManyField("Title") 
+       
 class Question(models.Model):
+    def as_dict(self):
+        return self.question
+          # other stuff
     question = models.CharField(max_length=300)
 
 class Skill(models.Model):
