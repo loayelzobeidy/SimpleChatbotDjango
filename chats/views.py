@@ -61,11 +61,8 @@ def insert_answers(request):
     if(len(session)>0):
         questions = Question.objects.all()
         user_session = session[0]
-<<<<<<< HEAD
         if 'answer' not in body:
              return HttpResponse("answer filed doesn't exsist in the request")
-=======
->>>>>>> 71f871256d0f10bafffe4fbba0f4067e1f91e192
         answer =  body['answer'] 
         if(user_session.index_question==0):
             print('heeereeree')
