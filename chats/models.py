@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 from django.db import models
 from questions.models import Question
 # Create your models here.
-
+import uuid
 class Skill(models.Model):
     skill =  models.CharField(max_length=200, primary_key=True)
     def __str__(self):
@@ -27,8 +27,13 @@ class User(models.Model):
     years_of_experience = models.IntegerField(default=0)
     seeking_titles = models.ManyToManyField(Title) 
 class Answer(models.Model):
-    answer_id =  models.CharField(max_length=200, primary_key=True)
-    # question_id = models.OneToOneField(Question,on_delete=None)
-    user_id = models.OneToOneField(User,on_delete=None)
+    answer_id =  models.CharField(max_length=200, primary_key=True,default=uuid.uuid4())
+    question_id = models.ForeignKey(Question,on_delete=None,default=0)
+    user_id = models.ForeignKey(User,on_delete=None,default=0)
     answer = models.CharField(max_length=1000)
+    
+class Session(models.Model):
+    user_id = models.ForeignKey(User,on_delete=None)
+    index_category= models.IntegerField()
+    index_question= models.IntegerField()
     
