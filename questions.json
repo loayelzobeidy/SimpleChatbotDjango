@@ -1,0 +1,170 @@
+[
+    {   "pk":0,
+        "fields": {
+            "question": "Hi, I'm Marvin :)\n I'd like to become you’re A.I. career coach.\n Let's get to know each other.\n What's your first name?",
+            "answerType": "text",
+            "category": "0",
+            "priority": "1"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":1,
+        "fields": {
+            "question": "Nice to meet you, #Name\n I'll ask a couple of questions about what you are doing and what you want to achieve in your professional life. It will take around 120 seconds…\n In which city do you live?",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "2"
+        },
+        "model": "questions.Question"
+    },
+    {"pk":2,
+        "fields": {
+            "question": "What are you doing now?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "3"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":3,
+        "fields": {
+            "question": " what is your degree?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "4"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":4,
+        "fields": {
+            "question": " What is your major?",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "5"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":5,
+        "fields": {
+            "question": " In which university, school?",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "6"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":6,
+        "fields": {
+            "question": "year of graduation?",
+            "answerType": "Calendar",
+            "category": "0",
+            "priority": "7"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":7,
+        "fields": {
+            "question": "Which of the following categories best describes your employment status?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "8"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":8,
+        "fields": {
+            "question": "Which of the following best describes your current occupation?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "9"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":9,
+        "fields": {
+            "question": "Which of the following best describes your role in industry?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "10"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":10,
+        "fields": {
+            "question": "Tell me your superpowers!",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "11"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":11,
+        "fields": {
+            "question": "Which tools and language you use at least 10 hours a week",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "12"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":12,
+        "fields": {
+            "question": "How many years of '#Job' experience do you have?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "13"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":13,
+        "fields": {
+            "question": "What's your current job title?",
+            "answerType": "Text",
+            "category": "0",
+            "priority": "14"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":14,
+        "fields": {
+            "question": "How large is the company you work at?",
+            "answerType": "MCQ",
+            "category": "0",
+            "priority": "15"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":15,
+        "fields": {
+            "question": "what is your gross monthly salary?",
+            "answerType": "Select",
+            "category": "0",
+            "priority": "16"
+        },
+        "model": "questions.Question"
+    },
+    {
+        "pk":16,
+        "fields": {
+            "question": "Tell me what would make you want to switch jobs?",
+            "answerType": "Select",
+            "category": "0",
+            "priority": "17"
+        },
+        "model": "questions.Question"
+    }
+]

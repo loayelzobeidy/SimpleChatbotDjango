@@ -1,0 +1,1055 @@
+[
+    {
+        "fields": {
+           "question_id":"2",
+             "answer":"Learning"
+        },
+        "model": "questions.PossibleAnswer"
+    }
+  ,
+    {
+        "fields": {
+           "question_id":"2",
+             "answer":"Working"
+        },
+        "model": "questions.PossibleAnswer"
+    }
+  ,
+  {
+    "fields": {
+       "question_id":"3",
+         "answer":"Grammar School"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"High School or equivalent"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Vocational/Technical School (2 year)"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Some College"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"College Graduate (4 year)"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Master's Degree (MS)"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Doctoral Degree (PhD)"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Professional Degree (MD,JD, etc.)"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"3",
+         "answer":"Other"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"7",
+         "answer":"Employed, working 40 or more hours per week"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"7",
+         "answer":"Employed, working 1-39 hours per week"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"7",
+         "answer":"Not employed, looking for work"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"7",
+         "answer":"Retired"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"7",
+         "answer":"Disabled, not able to work"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Management Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Protective Service Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Production Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Office and Administrative Support Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Installation, Maintenance, and Repair Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Building and Grounds Cleaning and Maintenance Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Food Preparation and Serving Related Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Education, Training, and Library Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Legal Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Life, Physical, and Social Science Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Business and Financial Operations Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Farming, Fishing, and Forestry Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Healthcare Support Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Construction and Extraction Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Sales and Related Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Computer and Mathematical Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Architecture and Engineering Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Arts, Design, Entertainment, Sports, and Media Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Personal Care and Service Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Healthcare Practitioners and Technical Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Community and Social Service Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Transportation and Materials Moving Occupations"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"8",
+         "answer":"Other (please specify)"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Trained Professional"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Skilled Laborer"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Consultant"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Temporary Employee"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Researcher"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Self-employed/Partner"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Upper Management"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Middle Management"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Junior Management"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Administrative Staff"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Support Staff"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Student"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"9",
+         "answer":"Other"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"Less than 1 year"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"1 year"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"2 year"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"3 year"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"4 year"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"5 year"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"6 - 10 years"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"12",
+         "answer":"10+ years"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"Self employed"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"2to 10"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"11 to 50"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"51 - 200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"201 to 500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"501 - 1000"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"14",
+         "answer":"1001+"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$1000 or less"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$1,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$1,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$1,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$2,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$2,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$2,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$3,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$3,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$3,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$3,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$4,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$4,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$4,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$5,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$5,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$5,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$6,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$6,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$6,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$6,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$7,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$7,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$7,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$8,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$8,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$8,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$9,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$9,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$9,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$9,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$10,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$10,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$10,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$11,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$11,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$11,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$12,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$12,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$12,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$12,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$13,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$13,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$13,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$15,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$16,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$16,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$16,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$17,100"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$17,400"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$17,700"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$18,000"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$18,300"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$18,600"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$18,900"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$19,200"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$19,500"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$19,800"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$20,100"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+
+{
+    "fields": {
+       "question_id":"15",
+         "answer":"$20000 or more"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Higher salary"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Promotion"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Benefits package"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Flexible working hours"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Remote work possibility"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Relocation"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Startup environment"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"stable environment"
+    },
+    "model": "questions.PossibleAnswer"
+},
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"Growth opportunity"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+
+{
+    "fields": {
+       "question_id":"16",
+         "answer":"New Challenge"
+    },
+    "model": "questions.PossibleAnswer"
+}
+]
