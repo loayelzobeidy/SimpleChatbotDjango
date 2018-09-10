@@ -25,7 +25,7 @@ SECRET_KEY = '4#npckczn8=gwlb-#pui(qlpcc@$l)$0f#hl51%5(14b!d92kj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -122,3 +122,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/home/datasc/marvin_backend/chatbotHm/static/"
