@@ -15,7 +15,9 @@ class Question(models.Model):
     # after = models.ManyToManyField("self", blank=True, null=True,default=None)
     question = models.CharField(max_length=200)
     answerType =  models.CharField(max_length=200)
+    className=models.CharField(max_length=200)
     priority = models.IntegerField(validators=[MaxValueValidator(1000), MinValueValidator(0)])
+    owner =  models.CharField(max_length=200)
     def as_dict(self):
          return dict((f.name, getattr(self, f.name)) for f in self._meta.fields if f.name != 'category')
         # ,self.answerType,self.question_id,self.category,self.priority,self.optinal

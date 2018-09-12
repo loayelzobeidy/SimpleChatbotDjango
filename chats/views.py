@@ -3,7 +3,7 @@
 import json
 from django.core import serializers
 from django.shortcuts import render
-from chats.models import  User,Skill,Title,Session,Answer
+from chats.models import  User,Skill,Title,Session,Answer,Switch_reasons
 # Create your views here.
 from questions.models import Question,PossibleAnswer,Category
 from django.http import HttpResponse
@@ -59,18 +59,16 @@ def insert_answers(request):
         user = user[0]
     session = Session.objects.filter(user_id=user)
     if(len(session)>0):
-        questions = Question.objects.all()
+        questions = Question.objects.all().order_by('category','priority')
+        print(questions )
         user_session = session[0]
         if 'answer' not in body:
              return HttpResponse("answer filed doesn't exsist in the request")
         answer =  body['answer'] 
-        if(user_session.index_question==0):
-            print('heeereeree')
-            user.name = body['answer']
-            user.save()        
-        if(user_session.index_question<len(questions)-1):
-            user_session.index_question = user_session.index_question+1
-            user_session.save()
+        # if(user_session.index_question==0):
+        #     print('heeereeree')
+        #     user.name = body['answer']
+        #     user.save()        
         question_id =  questions[user_session.index_question]
         possibleAnswer = Answer(answer_id=uuid.uuid4(),user_id = user,question_id=question_id,answer=answer)
         possibleAnswer.save()
@@ -79,6 +77,26 @@ def insert_answers(request):
         session = Session(user_id=user,index_category=0,index_question=0)
         session.save()
         message = "new user created"
+    print(user_session.index_question,"indexxx")
+    if(questions[user_session.index_question].answerType=="Select"):
+        attributes = body["answer"].split(',')
+        for attr in attributes:
+            attribute = globals()[questions[user_session.index_question].className]
+            print(attribute,"A")
+            attribute_temp = attribute(attr)
+            attribute_temp.save()
+            print(attribute_temp,"B")
+            attribute_user = getattr(user,questions[user_session.index_question].owner)
+            attribute_user.add(attribute_temp)
+            user.save()
+    else:
+        print("innnn==>>",questions[user_session.index_question])
+        setattr(user,questions[user_session.index_question].owner,body['answer']) 
+        print(user.name)  
+        user.save()   
+    if(user_session.index_question<len(questions)-1):
+            user_session.index_question = user_session.index_question+1
+            user_session.save()  
     return HttpResponse(message)
 
 def get_questions(request):
@@ -106,6 +124,7 @@ def chat(request):
     body = json.loads(body_unicode)
     user_id = body['email']  
     user = User.objects.filter(email=user_id)
+    
     if(len(user)==0):
         user = User(email=user_id)
         user.save()
