@@ -16,6 +16,7 @@ class Question(models.Model):
     question = models.CharField(max_length=200)
     answerType =  models.CharField(max_length=200)
     className=models.CharField(max_length=200)
+    after = models.TextField(null=True)
     priority = models.IntegerField(validators=[MaxValueValidator(1000), MinValueValidator(0)])
     owner =  models.CharField(max_length=200)
     def as_dict(self):

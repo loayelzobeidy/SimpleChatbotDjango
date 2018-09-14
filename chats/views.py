@@ -19,7 +19,16 @@ def insert_questions_json(request):
             category = Category.objects.filter(category_id=question["fields"]["category"])[0]
             question = Question(question_id = uuid.uuid4(),question=question["fields"]["question"],answerType=question["fields"]["answerType"],category=category,priority=question["fields"]["priority"])
             question.save()
-    return HttpResponse("questions inserted successfully")    
+    return HttpResponse("questions inserted successfully")  
+def getUser(request, username):
+    user = [ User.as_dict() for User in User.objects.filter(email=username) ]
+    dummy = Skill.objects.all()
+    skills = User.objects.filter(email=username)[0].switch_reasons
+    print(skills,'skilllsss')
+    print(dummy,'sks')
+    
+    print(user,'userrerrrr')
+    return HttpResponse(user, content_type ="application/json")    
 def insert_possible_Answers_json(request):
     with open('/home/loay/Work/chatbotHm/possibleAnswers.json') as f:
         data = json.load(f)
@@ -80,15 +89,22 @@ def insert_answers(request):
     print(user_session.index_question,"indexxx")
     if(questions[user_session.index_question].answerType=="Select"):
         attributes = body["answer"].split(',')
-        for attr in attributes:
-            attribute = globals()[questions[user_session.index_question].className]
-            print(attribute,"A")
-            attribute_temp = attribute(attr)
-            attribute_temp.save()
-            print(attribute_temp,"B")
-            attribute_user = getattr(user,questions[user_session.index_question].owner)
-            attribute_user.add(attribute_temp)
-            user.save()
+       
+            # attribute = globals()[questions[user_session.index_question].className]
+            # print(attribute,"A")
+            # attribute_temp = attribute(attr)
+            # attribute_temp.save()
+        listIWantToStore = getattr(user,questions[user_session.index_question].owner)
+        if(listIWantToStore==None):
+            listIWantToStore=[]
+        print(listIWantToStore,"List",questions[user_session.index_question].owner)
+        listIWantToStore +=attributes
+        setattr(user,questions[user_session.index_question].owner,json.dumps(listIWantToStore))
+        user.save()
+        print(listIWantToStore,"B")
+        # attribute_user = getattr(user,questions[user_session.index_question].owner)
+        # attribute_user.add(attribute_temp)
+        # user.save()
     else:
         print("innnn==>>",questions[user_session.index_question])
         setattr(user,questions[user_session.index_question].owner,body['answer']) 
@@ -136,6 +152,21 @@ def chat(request):
         print("replace",dictionaries[session.index_question]["question"])
         dictionaries[session.index_question]["question"]=dictionaries[session.index_question]["question"].replace("#Name",user.name)        
     # print(PossibleAnswer.objects.filter(question_id=query[session.index_question]))
+    while(session.index_question<len(query)):
+       flag = True
+       after = query[session.index_question].after
+       if(after==None):
+           after = '{}'
+       after = json.loads(after)
+       for attribute,value  in after.items():
+           if(not(getattr(user,attribute)==value)):
+               flag = False
+               break
+       if(not flag):
+            session.index_question += 1
+            session.save()
+       else :
+            break           
     possibleAnswers  = [ possibleAnswer.as_dict() for possibleAnswer in PossibleAnswer.objects.filter(question_id=query[session.index_question])]
     # print(dictionaries[session.index_question],possibleAnswers)
     #  [ Question.as_dict() for Question in]
