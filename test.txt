@@ -1,0 +1,10 @@
+{   "pk":0,
+        "fields": {
+            "question": "Hi, I'm Marvin :)\n I'd like to become you’re A.I. career coach.\n Let's get to know each other.\n What's your first name?",
+            "answerType": "text",
+            "category": "0",
+            "priority": "1"
+        },
+        "model": "questions.Question"
+    },
+    

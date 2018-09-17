@@ -1,89 +1,99 @@
 [
-    {   "pk":0,
-        "fields": {
-            "question": "Hi, I'm Marvin :)\n I'd like to become you’re A.I. career coach.\n Let's get to know each other.\n What's your first name?",
-            "answerType": "text",
-            "category": "0",
-            "priority": "1"
-        },
-        "model": "questions.Question"
-    },
     {
-        "pk":1,
-        "fields": {
-            "question": "Nice to meet you, #Name\n I'll ask a couple of questions about what you are doing and what you want to achieve in your professional life. It will take around 120 seconds…\n In which city do you live?",
-            "answerType": "Text",
-            "category": "0",
-            "priority": "2"
-        },
-        "model": "questions.Question"
+    "pk":1,
+    "fields": {
+        "question": "I'll ask a couple of questions about what you are doing and what you want to achieve in your professional life. It will take around 120 seconds…\n In which city do you live?",
+        "answerType": "Text",
+        "category": "0",
+        "priority": "2",
+        "owner":"city"
     },
+    "model": "questions.Question"
+},
+    
     {"pk":2,
         "fields": {
             "question": "What are you doing now?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "3"
+            "priority": "3",
+            "owner":"employed"
         },
         "model": "questions.Question"
     },
     {
         "pk":3,
         "fields": {
-            "question": " what is your degree?",
+            "question": " What is your highest earned degree?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "4"
+            "priority": "4",
+            "owner":"degree",
+            "after":{"employed":"Learning"}
+            
         },
         "model": "questions.Question"
     },
     {
         "pk":4,
         "fields": {
-            "question": " What is your major?",
+            "question": " What is your area of study?",
             "answerType": "Text",
             "category": "0",
-            "priority": "5"
+            "priority": "5",
+            "owner":"major",
+            "after":{"employed":"Learning"}
+            
         },
         "model": "questions.Question"
     },
     {
         "pk":5,
         "fields": {
-            "question": " In which university, school?",
-            "answerType": "Text",
+            "question": " Where did you get this degree from? (University)",
+            "answerType": "AutoComplete",
             "category": "0",
-            "priority": "6"
+            "priority": "6",
+            "owner":"school",
+            "after":{"employed":"Learning"}
+            
         },
         "model": "questions.Question"
     },
     {
         "pk":6,
         "fields": {
-            "question": "year of graduation?",
+            "question": "When did you graduate or expect to graduate?",
             "answerType": "Calendar",
             "category": "0",
-            "priority": "7"
+            "priority": "7",
+            "owner":"graduation_year",
+            "after":{"employed":"Learning"}
+            
         },
         "model": "questions.Question"
     },
     {
         "pk":7,
         "fields": {
-            "question": "Which of the following categories best describes your employment status?",
+            "question": "Perfect, what is your employment status?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "8"
+            "priority": "8",
+            "owner":"employement_status",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
     {
         "pk":8,
         "fields": {
-            "question": "Which of the following best describes your current occupation?",
-            "answerType": "MCQ",
+            "question": "Please tell me what is your field of employment?",
+            "answerType": "Text",
             "category": "0",
-            "priority": "9"
+            "priority": "9",
+            "owner":"employement_field"
+            
         },
         "model": "questions.Question"
     },
@@ -93,37 +103,46 @@
             "question": "Which of the following best describes your role in industry?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "10"
+            "priority": "10",
+            "owner":"industry_role",
+            "after":{"employed":"Working"}
+            
         },
         "model": "questions.Question"
     },
     {
         "pk":10,
         "fields": {
-            "question": "Tell me your superpowers!",
+            "question": "Select up to three soft skills",
             "answerType": "Text",
             "category": "0",
-            "priority": "11"
+            "priority": "11",
+            "owner":"soft_skills",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
     {
         "pk":11,
         "fields": {
-            "question": "Which tools and language you use at least 10 hours a week",
+            "question": "Sounds great! How about your technical skills?",
             "answerType": "Text",
             "category": "0",
-            "priority": "12"
+            "priority": "12",
+            "owner":"tech_skills",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
     {
         "pk":12,
         "fields": {
-            "question": "How many years of '#Job' experience do you have?",
+            "question": "How many years of job experience do you have?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "13"
+            "priority": "13",
+            "owner":"years_of_experience",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
@@ -133,7 +152,10 @@
             "question": "What's your current job title?",
             "answerType": "Text",
             "category": "0",
-            "priority": "14"
+            "priority": "14",
+            "owner":"job_title",
+            "after":{"employed":"Working"}
+            
         },
         "model": "questions.Question"
     },
@@ -143,7 +165,9 @@
             "question": "How large is the company you work at?",
             "answerType": "MCQ",
             "category": "0",
-            "priority": "15"
+            "priority": "15",
+            "owner":"current_company_size",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
@@ -151,19 +175,23 @@
         "pk":15,
         "fields": {
             "question": "what is your gross monthly salary?",
-            "answerType": "Select",
+            "answerType": "Text",
             "category": "0",
-            "priority": "16"
+            "priority": "16",
+            "owner":"gross_salary",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     },
     {
         "pk":16,
         "fields": {
-            "question": "Tell me what would make you want to switch jobs?",
+            "question": "Finally, what would a better job offer you? (select all that apply)",
             "answerType": "Select",
             "category": "0",
-            "priority": "17"
+            "priority": "17",
+            "owner":"switch_reasons",
+            "after":{"employed":"Working"}
         },
         "model": "questions.Question"
     }

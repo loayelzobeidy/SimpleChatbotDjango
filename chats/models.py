@@ -42,7 +42,10 @@ class User(models.Model):
     employement_status = models.CharField(max_length=200)
     current_occupation = models.CharField(max_length=200)
     industry_role = models.CharField(max_length=200)
+    employement_field =  models.CharField(max_length=200)
     switch_reasons = models.TextField(null=True)
+    soft_skills=models.CharField(max_length=200)
+    tech_skills = models.CharField(max_length=200)
     # super_power = ListCharField(
     #     base_field=CharField(max_length=10),
     #     size=6,

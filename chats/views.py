@@ -142,17 +142,21 @@ def chat(request):
     user = User.objects.filter(email=user_id)
     
     if(len(user)==0):
-        user = User(email=user_id)
+        user = User(email=user_id,name=body['name'])
         user.save()
         session = Session(user_id=user,index_question=0,index_category=0)
         session.save()     
     else :
         user = user[0]
         session = Session.objects.filter(user_id=user)[0]
-        print("replace",dictionaries[session.index_question]["question"])
+        # print("replace",dictionaries[session.index_question]["question"])
+        if(session.index_question>=len(query)):
+            return  HttpResponse(json.dumps({"message":"Questions has ended"}), content_type ="application/json")
         dictionaries[session.index_question]["question"]=dictionaries[session.index_question]["question"].replace("#Name",user.name)        
     # print(PossibleAnswer.objects.filter(question_id=query[session.index_question]))
     while(session.index_question<len(query)):
+       if(session.index_question>=len(query)):
+            return  HttpResponse(json.dumps({"message":"Questions has ended"}), content_type ="application/json")
        flag = True
        after = query[session.index_question].after
        if(after==None):
@@ -166,7 +170,9 @@ def chat(request):
             session.index_question += 1
             session.save()
        else :
-            break           
+            break
+    if(session.index_question>=len(query)):
+            return  HttpResponse(json.dumps({"message":"Questions has ended"}), content_type ="application/json")     
     possibleAnswers  = [ possibleAnswer.as_dict() for possibleAnswer in PossibleAnswer.objects.filter(question_id=query[session.index_question])]
     # print(dictionaries[session.index_question],possibleAnswers)
     #  [ Question.as_dict() for Question in]

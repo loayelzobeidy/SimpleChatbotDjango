@@ -17,6 +17,22 @@
   ,
   {
     "fields": {
+       "question_id":"2",
+         "answer":"Both"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+{
+    "fields": {
+       "question_id":"2",
+         "answer":"Nothing!"
+    },
+    "model": "questions.PossibleAnswer"
+}
+,
+  {
+    "fields": {
        "question_id":"3",
          "answer":"Grammar School"
     },
@@ -75,13 +91,7 @@
     },
     "model": "questions.PossibleAnswer"
 },
-{
-    "fields": {
-       "question_id":"3",
-         "answer":"Other"
-    },
-    "model": "questions.PossibleAnswer"
-},
+
 {
     "fields": {
        "question_id":"7",
@@ -109,13 +119,6 @@
     "fields": {
        "question_id":"7",
          "answer":"Retired"
-    },
-    "model": "questions.PossibleAnswer"
-},
-{
-    "fields": {
-       "question_id":"7",
-         "answer":"Disabled, not able to work"
     },
     "model": "questions.PossibleAnswer"
 },
