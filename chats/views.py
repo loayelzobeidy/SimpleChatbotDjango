@@ -95,7 +95,10 @@ def insert_answers(request):
             # print(attribute,"A")
             # attribute_temp = attribute(attr)
             # attribute_temp.save()
-        listIWantToStore = ast.literal_eval(getattr(user,questions[user_session.index_question].owner))
+        if(getattr(user,questions[user_session.index_question].owner)==None):
+            listIWantToStore = []
+        else : 
+            listIWantToStore = ast.literal_eval(getattr(user,questions[user_session.index_question].owner))
         print("list ",listIWantToStore,type(attributes))
         if(listIWantToStore==None):
             listIWantToStore=[]
@@ -163,11 +166,14 @@ def chat(request):
        after = query[session.index_question].after
        if(after==None):
            after = '{}'
+           break
        after = json.loads(after)
        for attribute,value  in after.items():
-           if(not(getattr(user,attribute)==value)):
-               flag = False
+           if(getattr(user,attribute)==value):
+               flag = True
                break
+           else:
+                flag = False
        if(not flag):
             session.index_question += 1
             session.save()
