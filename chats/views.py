@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import json
+import ast
 from django.core import serializers
 from django.shortcuts import render
 from chats.models import  User,Skill,Title,Session,Answer,Switch_reasons
@@ -94,10 +95,11 @@ def insert_answers(request):
             # print(attribute,"A")
             # attribute_temp = attribute(attr)
             # attribute_temp.save()
-        listIWantToStore = getattr(user,questions[user_session.index_question].owner)
+        listIWantToStore = ast.literal_eval(getattr(user,questions[user_session.index_question].owner))
+        print("list ",listIWantToStore,type(attributes))
         if(listIWantToStore==None):
             listIWantToStore=[]
-        print(listIWantToStore,"List",questions[user_session.index_question].owner)
+        print(type(listIWantToStore),"List",questions[user_session.index_question].owner)
         listIWantToStore +=attributes
         setattr(user,questions[user_session.index_question].owner,json.dumps(listIWantToStore))
         user.save()
